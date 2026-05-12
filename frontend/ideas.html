@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaForge - Ideas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">🔥 IdeaForge</div>
+        <a href="index.html" class="back-btn">← Back to Domains</a>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="ideas-header">
+        <h1 id="domain-title">Projects for <span id="domain-name"></span></h1>
+        <p>Select difficulty level</p>
+
+        <!-- DIFFICULTY FILTER -->
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterIdeas('all')">All</button>
+            <button class="filter-btn" onclick="filterIdeas('beginner')">🟢 Beginner</button>
+            <button class="filter-btn" onclick="filterIdeas('intermediate')">🟡 Intermediate</button>
+            <button class="filter-btn" onclick="filterIdeas('advanced')">🔴 Advanced</button>
+        </div>
+    </section>
+
+    <!-- IDEAS GRID -->
+    <section class="ideas-section">
+        <div class="ideas-grid" id="ideas-grid">
+            <!-- Cards will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <script src="js/ideas.js"></script>
+</body>
+</html>
